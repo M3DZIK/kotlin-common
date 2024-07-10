@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.medzik.common</groupId>
-    <artifactId>kotlin</artifactId>
+    <artifactId>kotlin-parent</artifactId>
     <name>Kotlin Common Libraries</name>
     <description>
         A collection of reusable Kotlin libraries that provides common functionalities, such as IO operations.
