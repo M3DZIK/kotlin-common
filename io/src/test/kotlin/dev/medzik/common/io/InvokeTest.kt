@@ -34,4 +34,17 @@ class InvokeTest {
         // wait for the coroutine to complete
         job.join()
     }
+
+    @Test
+    fun dispatcherSample() = runBlocking {
+        val block = ioBlock {
+            "Hello, World!"
+        }
+
+        // run the io block on the custom dispatcher
+        val result = block
+            .dispatcher(Dispatchers.IO)
+
+        assertEquals("Hello, World!", result)
+    }
 }
