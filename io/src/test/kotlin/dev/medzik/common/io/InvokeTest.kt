@@ -45,6 +45,6 @@ class InvokeTest {
         val result = block
             .dispatcher(Dispatchers.IO)
 
-        assertEquals("Hello, World!", result)
+        assertEquals("Hello, World!", result())
     }
 }
