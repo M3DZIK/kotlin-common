@@ -1,4 +1,4 @@
-package dev.medzik.common
+package dev.medzik.common.io
 
 import kotlinx.coroutines.flow.flow
 import org.junit.jupiter.api.Assertions.assertEquals

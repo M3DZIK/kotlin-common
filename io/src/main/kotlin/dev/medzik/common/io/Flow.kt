@@ -1,4 +1,4 @@
-package dev.medzik.common
+package dev.medzik.common.io
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
@@ -8,6 +8,6 @@ import kotlinx.coroutines.flow.first
  *
  * @return An IO that suspends until the first value is emitted from the Flow and returns it.
  *
- * @sample dev.medzik.common.FlowTest.flowSample
+ * @sample dev.medzik.common.io.FlowTest.flowSample
  */
 fun <T> Flow<T>.toIO(): IO<T> = ioBlock { first() }
