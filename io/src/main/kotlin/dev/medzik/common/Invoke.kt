@@ -10,7 +10,7 @@ import kotlinx.coroutines.runBlocking
  *
  * @return The result of the IO function.
  *
- * @sample dev.medzik.common.samples.InvokeSample.runBlockingSample
+ * @sample dev.medzik.common.InvokeTest.runBlockingSample
  */
 fun <T> IO<T>.runBlocking(): T = runBlocking { invoke() }
 
@@ -21,6 +21,6 @@ fun <T> IO<T>.runBlocking(): T = runBlocking { invoke() }
  * @return A [Job] representing the launched coroutine operation.
  * The job can be used to cancel the operation if needed.
  *
- * @sample dev.medzik.common.samples.InvokeSample.launchInSample
+ * @sample dev.medzik.common.InvokeTest.launchInSample
  */
 fun <T> IO<T>.launchIn(scope: CoroutineScope): Job = scope.launch { invoke() }

@@ -1,16 +1,13 @@
-package dev.medzik.common.samples
+package dev.medzik.common
 
-import dev.medzik.common.ioBlock
-import dev.medzik.common.launchIn
-import dev.medzik.common.runBlocking
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 
-class InvokeSample {
+class InvokeTest {
     @Test
     fun runBlockingSample() {
         val result = ioBlock {

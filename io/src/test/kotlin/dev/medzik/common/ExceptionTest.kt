@@ -1,12 +1,9 @@
-package dev.medzik.common.samples
+package dev.medzik.common
 
-import dev.medzik.common.catchException
-import dev.medzik.common.ioBlock
-import dev.medzik.common.runBlocking
 import org.junit.jupiter.api.Test
 import java.io.IOException
 
-class ExceptionSample {
+class ExceptionTest {
     @Test
     fun catchExceptionSample() {
         val ioOperation = ioBlock {

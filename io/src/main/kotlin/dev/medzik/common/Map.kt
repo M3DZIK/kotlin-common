@@ -11,8 +11,8 @@ package dev.medzik.common
  * @param block A lambda IO function that takes a value of type `T` and returns a value of type `R`.
  * @return A new `IO<R>` monad containing the transformed value.
  *
- * @sample dev.medzik.common.samples.MapSample.mapSample
- * @sample dev.medzik.common.samples.MapSample.mapAndFlatMapSample
+ * @sample dev.medzik.common.MapTest.mapSample
+ * @sample dev.medzik.common.MapTest.mapAndFlatMapSample
  */
 inline fun <T, R> IO<T>.map(
     crossinline block: suspend (T) -> R
@@ -33,8 +33,8 @@ inline fun <T, R> IO<T>.map(
  * @param block A lambda IO function that takes a value of type `T` and returns a new `IO<R>` monad.
  * @return A new `IO<R>` monad resulting from the transformation.
  *
- * @sample dev.medzik.common.samples.MapSample.flatMapSample
- * @sample dev.medzik.common.samples.MapSample.mapAndFlatMapSample
+ * @sample dev.medzik.common.MapTest.flatMapSample
+ * @sample dev.medzik.common.MapTest.mapAndFlatMapSample
  */
 inline fun <T, R> IO<T>.flatMap(
     crossinline block: suspend (T) -> IO<R>

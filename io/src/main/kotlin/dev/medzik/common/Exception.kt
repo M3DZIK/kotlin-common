@@ -8,7 +8,7 @@ import kotlin.coroutines.cancellation.CancellationException
  * @param shouldHandle A function that determines whether the caught exception should be handled or not.
  * @param block A suspend function that will be invoked when the exception is to be handled.
  *
- * @sample dev.medzik.common.samples.ExceptionSample.catchExceptionSample
+ * @sample dev.medzik.common.ExceptionTest.catchExceptionSample
  */
 inline fun <T> IO<T>.catchException(
     crossinline shouldHandle: (Throwable) -> Boolean = { true },

@@ -1,12 +1,9 @@
-package dev.medzik.common.samples
+package dev.medzik.common
 
-import dev.medzik.common.IO
-import dev.medzik.common.ioBlock
-import dev.medzik.common.runBlocking
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 
-class IOSample {
+class IOTest {
     @Test
     fun ioSample() {
         val resultBlock: IO<String> = ioBlock {

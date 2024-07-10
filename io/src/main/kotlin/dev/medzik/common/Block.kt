@@ -6,7 +6,7 @@ package dev.medzik.common
  * @param block The block to be wrapped into a new [IO] instance.
  * @return A new [IO] instance.
  *
- * @sample dev.medzik.common.samples.BlockSample.blockSample
+ * @sample dev.medzik.common.BlockTest.blockSample
  */
 inline fun <T> ioBlock(
     crossinline block: IO<T>,

@@ -1,12 +1,10 @@
-package dev.medzik.common.samples
+package dev.medzik.common
 
-import dev.medzik.common.runBlocking
-import dev.medzik.common.toIO
 import kotlinx.coroutines.flow.flow
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 
-class FlowSample {
+class FlowTest {
     @Test
     fun flowSample() {
         val flow = flow { emit(100) }

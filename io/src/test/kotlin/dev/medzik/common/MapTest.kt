@@ -1,13 +1,9 @@
-package dev.medzik.common.samples
+package dev.medzik.common
 
-import dev.medzik.common.flatMap
-import dev.medzik.common.ioBlock
-import dev.medzik.common.map
-import dev.medzik.common.runBlocking
 import org.junit.jupiter.api.Assertions.assertEquals
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
 
-class MapSample {
+class MapTest {
     @Test
     fun mapSample() {
         val block = ioBlock {
