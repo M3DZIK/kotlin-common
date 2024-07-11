@@ -10,7 +10,7 @@
     <description>
         A collection of reusable Kotlin libraries that provides common functionalities, such as IO operations.
     </description>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <url>https://github.com/M3DZIK/kotlin-common</url>
 
     <developers>
