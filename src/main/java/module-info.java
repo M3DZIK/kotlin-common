@@ -1,4 +1,4 @@
-module dev.medzik.common.io {
+module dev.medzik.common {
     requires transitive kotlin.stdlib;
     requires kotlinx.coroutines.core;
 
