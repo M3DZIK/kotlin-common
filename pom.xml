@@ -144,6 +144,9 @@
                     <samples>
                         <dir>src/test/kotlin</dir>
                     </samples>
+                    <includes>
+                        <include>docs/package.md</include>
+                    </includes>
                 </configuration>
             </plugin>
             <plugin>
